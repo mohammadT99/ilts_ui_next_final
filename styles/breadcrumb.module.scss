@@ -1,0 +1,71 @@
+.bradcump {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    //justify-content: center;
+    margin-right: auto;
+    background: url("../public/bread.svg") no-repeat center ;
+    border-radius: 10px;
+    width: 1440px;
+    padding: 10px;
+
+    .brsdcump__content {
+        padding: 14px 0 ;
+        margin-right:20px ;
+    }
+    .brsdcump__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 14px;
+        .item_link {
+            color: white;
+            font-size: 16px;
+            font-weight: 300;
+            &.active {
+                color: white;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+        }
+    }
+}
+
+.col_6 {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+@media only  screen and (max-width: 768px) {
+    .bradcump {
+        width: 730px;
+        border-radius: 10px ;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .bradcump{
+        width:400px;
+        border-radius: 10px;
+
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .bradcump{
+        width:350px;
+        border-radius: 10px;
+
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .bradcump{
+        width:300px;
+        border-radius: 10px;
+
+    }
+}

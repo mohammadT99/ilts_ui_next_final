@@ -1,0 +1,13 @@
+.navbar_width {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent!important;
+    header {
+        max-width: 90% !important;
+        justify-content: center !important;
+        align-items: center;
+    }
+}
+

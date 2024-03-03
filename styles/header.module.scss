@@ -1,0 +1,134 @@
+// ================== style ================= //
+.header {
+  padding:10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  // background-color: red;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .nav_item  {
+
+    .nav_link {
+      transition: all 0.5s ease ;
+      padding: 6px 10px;
+      border-radius: 10px;
+
+    }
+    &:hover{
+
+      .nav_link {
+        background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
+        color: white;
+
+      }
+    }
+  }
+}
+
+.responsive__menue{
+  display: none;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.user__acount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.btn_primary {
+  padding:  8px 10px ;
+  background-color: #525FE1;
+  border-radius:10px;
+  color: white;
+}
+
+
+
+
+//  =====================  reaposnsive ============== //
+
+
+@media only screen and (max-width:836px) {
+
+  .responsive__menue {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .user__acount {
+    display: none;
+  }
+}
+
+
+.light_header{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 5;
+  height: 100px;
+  .light_nav{
+    display: flex;
+    color: white;
+    margin: auto;
+
+    column-gap: 60px;
+    width: 1440px;
+    .light_menu_logo{
+      .light_menu_logo_it{
+        display: flex;
+        column-gap: 8px;
+
+        justify-items: center;
+      }
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .light_nav_menu{
+      flex-grow: 1;
+      ul{
+        display: flex;
+        column-gap: 30px;
+
+        li{
+          line-height: 100px;
+        }
+      }
+    }
+
+    .login_btn{
+      display: flex;
+      column-gap: 8px;
+      margin-top: 20px;
+    }
+  }
+
+
+}

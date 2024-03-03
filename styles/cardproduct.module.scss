@@ -1,0 +1,100 @@
+.courses__cards {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.courses__card {
+
+  flex: 1 1 calc(25% - 16px);
+  width: calc(25% - 16px);
+  max-width: calc(25% - 16px);
+  padding-bottom: 30px;
+  .card__item {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 13px 28px 0px rgba(0, 0, 0, 0.06), 0px 51px 51px 0px rgba(0, 0, 0, 0.05), 0px 116px 69px 0px rgba(0, 0, 0, 0.03), 0px 206px 82px 0px rgba(0, 0, 0, 0.01), 0px 322px 90px 0px rgba(0, 0, 0, 0.00);
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+
+  .courses__card {
+    position: relative;
+  }
+
+  .card__item__body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-inline: 18px;
+    gap: 8px;
+
+    h2 {
+      margin-top: 8px;
+      font-size: 1.2rem!important;
+      font-weight: 500!important;
+    }
+    .price_sec{
+      font-weight: 400;
+      font-size: 0.875rem;
+
+      color: #505050;
+      display: flex;
+      column-gap: 8px;
+      justify-content: flex-end;
+      .price{
+        font-weight: 600;
+      }
+      .price_label{
+
+      }
+    }
+    padding: 6px;
+  }
+
+  .btn-card {
+    // z-index: 1;
+    margin-top: 100px;
+    // margin-left: auto;
+    // margin-right: auto;
+    padding: 10px 72px !important;
+    position: absolute;
+    top: -120px;
+    right: 90px;
+
+  }
+}
+
+.btn {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 10px;
+  border-radius: 10px;
+  width: max-content;
+  height: 47px;
+  font-size: 16px;
+  // font-weight: 600;
+
+
+}
+
+.cardbtn {
+
+  position: absolute!important;
+  top: 100%;
+  right: 50%;
+  transform: translate3d(50% , -50% , 0)!important;
+}
+
+.card__item__img {
+  height: 200px;
+  //margin: 10px;
+  //width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
