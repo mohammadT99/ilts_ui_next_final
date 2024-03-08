@@ -1,0 +1,35 @@
+.mentors_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 20px;
+  width: 450px;
+  border-radius: 10px;
+
+  .mentors_card_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    h1 {
+      font-size: 20px;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .mentors_card_title_span {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px;
+      background: #d0f4fe;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      transition: all 0.5s ease;
+      &:hover{
+        background: white;
+      }
+    }
+  }
+}

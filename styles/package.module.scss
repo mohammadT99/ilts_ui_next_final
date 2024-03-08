@@ -11,8 +11,10 @@
   }
 
   position: relative;
-  height: 900px;
+  top: -80px;
+  height: 950px;
   background: #111;
+  //z-index: 10;
   padding-top: 130px;
 
   margin-bottom: 300px;
@@ -20,6 +22,7 @@
   .main_background {
     position: absolute;
     animation: background-landing-course infinite 20s;
+
   }
 
 
@@ -69,9 +72,25 @@
       flex-direction: column;
 
       .player_conroller {
+        margin-top: -50px;
         padding-bottom: 100px;
-
+        z-index: 3;
         width: 100%;
+
+      }
+      .video_player_sec_bg{
+        padding:12px ;
+        width: 200px;
+        height: 150px;
+        position: relative;
+        border-radius: 5px;
+        top: 75px;
+        right: 545px;
+        z-index: 1;
+        border: 1px solid #FAA300 ;
+        -webkit-box-shadow: -5px -16px 43px -10px rgba(204,167,57,0.38);
+        -moz-box-shadow: -5px -16px 43px -10px rgba(204,167,57,0.38);
+        box-shadow: -5px -16px 43px -10px rgba(204,167,57,0.38);
       }
     }
 
@@ -118,6 +137,7 @@
           font-weight: 400;
           font-size: 17px;
           line-height: 43px;
+
           opacity: .7;
           text-align: center;
         }
@@ -166,13 +186,39 @@
   margin-top: 100px;
   width: 1440px;
   margin-bottom: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+.product_description__btn{
+  margin-top: 25px;
+  background: #D8D9DA;
+  color: #000;
+}
 
   h2 {
     font-weight: 900;
     font-size: 44px;
     line-height: 80px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 60px
+  }
+  p{
+    line-height: 55px;
+    font-size: 1rem;
+    height: 150px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+
+  }
+  .product_description__btn__icon{
+    transition: all 0.5s ease;
+    rotate: 180deg;
+  }
+  .add_h{
+    height: 450px;
   }
 
 
@@ -307,6 +353,10 @@
     line-height: 80px;
     text-align: center;
     margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
   }
 
   .product_session_title {
@@ -316,16 +366,31 @@
 }
 
 
-.cart {
+.purchase_assurance {
   width: 1440px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .purchase_assurance_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
 
-  .cart_title {
+  .purchase_assurance_title {
     font-weight: 900;
     font-size: 44px;
     line-height: 80px;
     text-align: center;
     margin-bottom: 60px;
+  }
+  .purchase_assurance_items{
+    display: grid;
+    grid-template-columns:repeat(2 , 1fr) ;
+    gap: 24px;
   }
 }
 

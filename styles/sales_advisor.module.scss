@@ -1,0 +1,37 @@
+.sales_advisor{
+  position: fixed;
+  background: white;
+  padding: 14px 14px;
+  border-bottom: 2px solid #525FE1;
+  z-index: 10;
+  margin-top:83vh;
+  width: 1440px;
+  margin-left: auto;
+  margin-right:10%;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  .sales_advisor_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sales_advisor_content_left{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      .sales_advisor_content_left_line{
+        width: 2px;
+        height: 35px;
+        background: #525FE1;
+        border-radius: 10px;
+      }
+    }
+    .sales_advisor_content_right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+}

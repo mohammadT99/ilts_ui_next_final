@@ -36,7 +36,7 @@ export default function DefaultLayout({
 			<main className={''}>
 				{children}
 			</main>
-			{/*<Footer />*/}
+			<Footer />
 		</div>
 	);
 }

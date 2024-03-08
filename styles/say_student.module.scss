@@ -1,0 +1,87 @@
+.student__say {
+  margin-top:100px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px ;
+  .student__say__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    h1 {
+      font-size: 45px;
+      font-weight: 700;
+    }
+    p {
+      width: 1000px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}
+
+.student__say__content {
+  margin-top: 35px;
+  display: flex;
+  z-index: -1;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #525FE1;
+  background-size:100%;
+  border-radius: 10px;
+  max-width: max-content;
+  padding: 14px 30px;
+  height: 236px;
+  p {
+    text-align: center;
+    margin-left: auto;
+    color: white;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+}
+
+.user__box  {
+  z-index: 2;
+  position: relative;
+  top:-57px;
+  left: 10px;
+  //left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //background-color: red;
+}
+
+//  ================== reasponsive ============
+
+@media only screen and (max-width:500px) {
+  .student__say__header {
+    h1 {
+      line-height: 60px;
+    }
+  }
+  .student__say__content {
+    width: max-content;
+    // padding: 10px 0;
+    p {
+      width: 400px;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 60px;
+      text-overflow: ellipsis;
+    }
+  }
+  .user__box {
+    position: relative;
+    top: -140px;
+  }
+
+}

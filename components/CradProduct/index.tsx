@@ -33,7 +33,7 @@ export default function CardProduct({data}) {
                         as={Link}
                         href={`/products/${data.id}`}
                         className={styles.cardbtn}
-                        color={'primary'}
+                        color={'secondary'}
                         startContent={<Bag/>}
                     >
 

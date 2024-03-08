@@ -4,9 +4,11 @@ import styles from '@/styles/svg_header.module.scss';
 export default function SvgHeader () {
     return(
         <>
+             <>
             <div className={styles.svg_hrader}>
-                <Image src={HeaderSvg} width={100}  alt={'header_svg'} />
+                <Image src={HeaderSvg} width={150}  alt={'header_svg'} className={styles.svg} />
             </div>
+        </>
         </>
     )
 }

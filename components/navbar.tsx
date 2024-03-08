@@ -5,6 +5,7 @@ import styles from '@/styles/navbar.module.scss'
 import Image from "next/image";
 import config from "tailwindcss/defaultConfig";
 import {siteConfig} from "@/config/site";
+import { UserAdd } from "iconsax-react";
 
 export default function NavbarSite() {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -36,14 +37,14 @@ export default function NavbarSite() {
 			<NavbarContent className="sm:hidden pr-3" justify="center">
 				<NavbarBrand>
 					<Image src={Logo} alt={''} />
-					<p className="font-bold text-inherit">ITLS</p>
+					<p className="font-bold text-inherit text-gray">ITLS</p>
 				</NavbarBrand>
 			</NavbarContent>
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
-				<NavbarBrand>
+				<NavbarBrand className={`flex gap-2`}>
 					<Image src={Logo} alt={''} />
-					<p className="font-bold text-inherit">ITLC</p>
+					<p className="font-bold text-inherit text-slate-400">ITLC</p>
 				</NavbarBrand>
 				{siteConfig.navItems.map((item)=>{
 					return (
@@ -59,11 +60,12 @@ export default function NavbarSite() {
 
 			<NavbarContent justify="end">
 				<NavbarItem className="hidden lg:flex">
-					<Link href="/login">Login</Link>
+					<Link color="primary" href="/login">ورود</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<Button as={Link} color="warning" href="/login" variant="flat">
-						Sign Up
+					<Button as={Link} color="primary"  href="/login"  className={styles.login_btn}>
+					ثبت نام
+						<UserAdd />
 					</Button>
 				</NavbarItem>
 			</NavbarContent>

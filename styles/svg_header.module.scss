@@ -1,6 +1,20 @@
 .svg_hrader{
   position: absolute;
   z-index: -1;
-  margin-right:-20px ;
+  margin-right:-270px ;
+  //top: 300px;
   opacity: 80%;
+}
+.svg{
+
+}
+@media only  screen and (max-width: 375px) {
+  .svg_hrader{
+    display: none;
+  }
+}
+@media only  screen and (max-width: 320px) {
+  .svg_hrader{
+    display: none;
+  }
 }

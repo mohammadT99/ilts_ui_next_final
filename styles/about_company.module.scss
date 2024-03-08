@@ -1,0 +1,305 @@
+/*
+| ======================= start styles with::P.Mohammad.7749:: ================ //
+*/
+
+.about_company {
+  margin-top: 80px;
+  .company__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    p {
+      font-size:16px;
+      font-weight: 500;
+      color: #333;
+      width: 900px;
+      text-align: center;
+    }
+  }
+  .company__video {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    width: 1120px;
+    height: 612px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .video_icon{
+      //background: white;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+  }
+  .company__about__list {
+    z-index: -1;
+    margin-top: 50px;
+    background-color: #FFCF59;
+    position: absolute;
+    right: 0;
+    //padding:40px ;
+    width: 100% ;
+    //max-width: 1440px;
+    height:700px;
+    margin-right: 0;
+    margin-right: auto;
+    display: flex;
+    // flex-direction: column;
+    .about__company__circle {
+      z-index: -1;
+      position: relative;
+      left: -41px;
+      top: -294px;
+      .image {
+        position: relative;
+        top: -485px;
+        right: 100px;
+      }
+    }
+    .company__about__list__circle {
+      transform:rotate(180deg);
+      max-width: 600px !important;
+      position: relative;
+      right: -100px;
+      top: -75px;
+    }
+  }
+  .company__about__list__text {
+    margin-top: 80px;
+    // margin-right:200px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    margin-right: 370px;
+
+    h1 {
+      font-size:50px;
+      font-weight:700;
+    }
+    p {
+      font-size: 16px;
+      width: 500px;
+      text-align: center;
+    }
+  }
+  .cards__company {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .company__card {
+    // padding: 30px;
+    background-color: white;
+    display: flex;
+    //flex: 2;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 6px 16px;
+    width:670px ;
+
+    // padding-bottom:10px ;/
+    gap: 30px;
+
+  }
+  .tx_number{
+    font-size:35px ;
+    font-weight: 600;
+
+  }
+  .tx {
+    width: max-content !important;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+/*
+| ======================= responsive ================ //
+*/
+
+@media only screen and (max-width :1300px) {
+  .about_company {
+    .company__video {
+      width: 1000px;
+      border-radius: 10px;
+
+    }
+
+  }
+}
+@media only screen and (max-width :1024px) {
+  .about_company {
+    .company__video {
+      width: 980px;
+      border-radius: 10px;
+
+    }
+
+  }
+}
+@media only screen and (max-width :836px) {
+  .about_company {
+    .company__video {
+      width: 500px;
+      /* padding: 200px; */
+      height: 500px;
+      border-radius: 10px;
+    }
+  }
+  .company__about__list {
+    .company__about__list__tex {
+      display: block;
+    }
+    .about__company__circle {
+      // z-index: -1;
+      position: relative;
+      left: -41px;
+      top: -249px;
+      .image {
+        position: relative;
+        top: -323px;
+        left: -0;
+      }
+    }
+
+  }
+
+
+
+}
+@media only screen and (max-width:900px) {
+
+  .about__company__circle {
+    // z-index: -1;
+    display: none;
+    position: relative;
+    left: -41px;
+    top: -249px;
+    .image {
+      position: relative;
+      top: -323px;
+      left: -0;
+    }
+  }
+  .company__about__list {
+    //    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .company__about__list__text {
+      h1 {
+        font-size:35px ;
+      }
+      p {
+        width: 450px;
+      }
+      .cards__company {
+        // padding-right: 20px;
+
+        .company__card {
+          // padding-right: 200px;
+        }
+      }
+    }
+  }
+
+
+
+}
+@media only screen and (max-width:700px) {
+
+  .about__company__circle {
+    // z-index: -1;
+    display: none;
+    position: relative;
+    left: -41px;
+    top: -249px;
+    .image {
+      position: relative;
+      top: -323px;
+      left: -0;
+    }
+  }
+  .company__about__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .company__about__list__text {
+      h1 {
+        font-size:35px ;
+      }
+      p {
+        width: 450px;
+      }
+      .cards__company {
+        padding-right: 20px;
+        .company__card {
+          padding-right: 200px;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+//mobile
+@media only  screen and (max-width: 320px){
+
+  .about_company{
+    margin-top: 35px;
+    .company__header{
+      h1{
+        font-size:35px ;
+      }
+      p{
+        width: 100%;
+      }
+    }
+    .company__video{
+      margin-top: -100px;
+      width: 300px;
+    }
+    .company__about__list{
+      margin-top: -100px;
+      width: 100%;
+    }
+    .about__company__circle {
+      display: flex;
+      position: relative;
+      left: -0px;
+      top: -0px;
+      display: none ;
+      .image {
+        display: none;
+        position: relative;
+        top: -323px;
+        left: -0;
+      }
+      .company__about__list__circle{
+        display: none;
+      }
+    }
+    .company__about__list__text{
+      margin-right: 0;
+    }
+  }
+}
+
+/*
+| ======================= end styles with::P.Mohammad.7749:: ================ //
+*/

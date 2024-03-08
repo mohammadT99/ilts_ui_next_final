@@ -1,24 +1,23 @@
 .card_blog_list {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 12px;
+  display: grid;
+  gap: 24px;
   //width: 100%;
+  grid-template-columns: repeat(3, 1fr);
 
 
 }
-.blog_content{
-  margin-top: 20px;
-display: flex;
-  //max-width: 100%;
 
-  margin-inline: 55px;
-  gap: 20px;
+.blog_content {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  justify-content: space-between;
+  gap: 45px;
 }
 
 @media only screen and (max-width: 768px) {
   .blog_content {
-    display:flex;
+    display: flex;
     //flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -26,6 +25,9 @@ display: flex;
   }
   .card_blog_list {
     //flex-direction: column;
+    display: grid;
+    //width: 100%;
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
@@ -34,10 +36,9 @@ display: flex;
 }
 
 
-
 @media only screen and (max-width: 425px) {
   .blog_content {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0;
@@ -51,7 +52,7 @@ display: flex;
 
 @media only screen and (max-width: 375px) {
   .blog_content {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0;
@@ -64,7 +65,7 @@ display: flex;
 
 @media only screen and (max-width: 320px) {
   .blog_content {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0;

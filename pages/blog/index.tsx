@@ -7,17 +7,19 @@ import styles from '@/styles/blog.module.scss'
 export default  function Blog () {
     return(
     <DefaultLayout>
-        <Breadcrumb links={'وبلاگ'} links_before={''} />
-        <div className={` ${styles.blog_content}`}>
+       <div className="container-box">
+           <Breadcrumb links={'وبلاگ'} links_before={''} />
+           <div className={` ${styles.blog_content}`}>
 
-            <div className={styles.card_blog_list}>
-                <CardBlog/>
-                <CardBlog/>
-                <CardBlog/>
-                <CardBlog/>
-            </div>
-            <SidebarBlog/>
-        </div>
+               <div className={styles.card_blog_list}>
+                   <CardBlog/>
+                   <CardBlog/>
+                   <CardBlog/>
+                   <CardBlog/>
+               </div>
+               <SidebarBlog/>
+           </div>
+       </div>
 
     </DefaultLayout>
     )
