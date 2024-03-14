@@ -3,7 +3,7 @@
 */
 
 .about_company {
-  margin-top: 80px;
+  margin-top: 200px;
   .company__header {
     display: flex;
     justify-content: center;
@@ -123,142 +123,211 @@
     width: max-content !important;
     font-size: 18px;
     font-weight: 700;
+
   }
 }
 
 /*
 | ======================= responsive ================ //
 */
+@media only  screen and (max-width: 1024px){
 
-@media only screen and (max-width :1300px) {
-  .about_company {
-    .company__video {
-      width: 1000px;
-      border-radius: 10px;
-
+  .about_company{
+    margin-top: 100px;
+    .company__header{
+      h1{
+        font-size:45px ;
+      }
+      p{
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+    .company__video{
+      margin-top: -80px;
+      width: 690px;
+    }
+    .company__about__list{
+      margin-top: -80px;
+      width: 100%;
+      .about__company__circle {
+        width: 350px;
+        z-index: -1;
+        position: relative;
+        left: -41px;
+        top: -294px;
+        .company__about__list__circle{
+          width: 500px;
+        }
+        .image {
+          position: relative;
+          top: -265px;
+          right: -50px;
+        }
+      }
     }
 
+    .company__about__list__text{
+      margin-right: auto;
+      margin-left: auto;
+      p{
+        width: 375px;
+      }
+      .cards__company{
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .company__card{
+          width: 650px;
+          gap: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 6px 25px;
+          .tx{
+            white-space: nowrap;
+          }
+        }
+      }
+
+    }
   }
 }
-@media only screen and (max-width :1024px) {
-  .about_company {
-    .company__video {
-      width: 980px;
-      border-radius: 10px;
 
-    }
+//tablet
+@media only  screen and (max-width: 768px){
 
-  }
-}
-@media only screen and (max-width :836px) {
-  .about_company {
-    .company__video {
-      width: 500px;
-      /* padding: 200px; */
-      height: 500px;
-      border-radius: 10px;
+  .about_company{
+    margin-top: 100px;
+    .company__header{
+      h1{
+        font-size:45px ;
+      }
+      p{
+        margin-top: 20px;
+        width: 100%;
+      }
     }
-  }
-  .company__about__list {
-    .company__about__list__tex {
-      display: block;
+    .company__video{
+      margin-top: -80px;
+      width: 690px;
+    }
+    .company__about__list{
+      margin-top: -80px;
+      width: 100%;
     }
     .about__company__circle {
-      // z-index: -1;
       position: relative;
-      left: -41px;
-      top: -249px;
+      left: -0px;
+      top: -0px;
+      display: none ;
       .image {
+        display: none;
         position: relative;
         top: -323px;
         left: -0;
       }
-    }
-
-  }
-
-
-
-}
-@media only screen and (max-width:900px) {
-
-  .about__company__circle {
-    // z-index: -1;
-    display: none;
-    position: relative;
-    left: -41px;
-    top: -249px;
-    .image {
-      position: relative;
-      top: -323px;
-      left: -0;
-    }
-  }
-  .company__about__list {
-    //    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .company__about__list__text {
-      h1 {
-        font-size:35px ;
+      .company__about__list__circle{
+        display: none;
       }
-      p {
-        width: 450px;
+    }
+    .company__about__list__text{
+      margin-right: auto;
+      margin-left: auto;
+      p{
+        width: 375px;
       }
-      .cards__company {
-        // padding-right: 20px;
-
-        .company__card {
-          // padding-right: 200px;
+      .cards__company{
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .company__card{
+          width: 650px;
+          gap: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 6px 25px;
+          .tx{
+            white-space: nowrap;
+          }
         }
       }
+
     }
   }
-
-
-
-}
-@media only screen and (max-width:700px) {
-
-  .about__company__circle {
-    // z-index: -1;
-    display: none;
-    position: relative;
-    left: -41px;
-    top: -249px;
-    .image {
-      position: relative;
-      top: -323px;
-      left: -0;
-    }
-  }
-  .company__about__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .company__about__list__text {
-      h1 {
-        font-size:35px ;
-      }
-      p {
-        width: 450px;
-      }
-      .cards__company {
-        padding-right: 20px;
-        .company__card {
-          padding-right: 200px;
-        }
-      }
-    }
-  }
-
-
-
 }
 
 //mobile
-@media only  screen and (max-width: 320px){
+@media only  screen and (max-width: 425px){
+
+  .about_company{
+    margin-top: 80px;
+    .company__header{
+      h1{
+        font-size:35px ;
+      }
+      p{
+        width: 100%;
+      }
+    }
+    .company__video{
+      margin-top: -100px;
+      width: 375px;
+    }
+    .company__about__list{
+      margin-top: -100px;
+      width: 100%;
+    }
+    .about__company__circle {
+      position: relative;
+      left: -0px;
+      top: -0px;
+      display: none ;
+      .image {
+        display: none;
+        position: relative;
+        top: -323px;
+        left: -0;
+      }
+      .company__about__list__circle{
+        display: none;
+      }
+    }
+    .company__about__list__text{
+      margin-right: auto;
+      margin-left: auto;
+      p{
+        width: 375px;
+      }
+      .cards__company{
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+        .company__card{
+          width: 375px;
+          gap: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 0;
+          margin-right: 12px;
+          .tx{
+            white-space: nowrap;
+          }
+        }
+      }
+
+    }
+  }
+}
+@media only  screen and (max-width: 375px){
 
   .about_company{
     margin-top: 35px;
@@ -295,7 +364,98 @@
       }
     }
     .company__about__list__text{
-      margin-right: 0;
+      margin-right: auto;
+      p{
+        width: 290px;
+      }
+      .cards__company{
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+        .company__card{
+          width: 350px;
+          gap: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 0;
+          margin-right: 13px;
+          .tx{
+            white-space: nowrap;
+          }
+        }
+      }
+
+    }
+  }
+}
+@media only  screen and (max-width: 320px){
+
+  .about_company{
+    margin-top: 60px;
+    .company__header{
+      h1{
+        font-size:35px ;
+      }
+      p{
+        width: 100%;
+      }
+    }
+    .company__video{
+      margin-top: -100px;
+      width: 300px;
+    }
+    .company__about__list{
+      margin-top: -100px;
+      width: 100%;
+    }
+    .about__company__circle {
+      display: flex;
+      position: relative;
+      left: -0px;
+      top: -0px;
+      display: none ;
+      .image {
+        display: none;
+        position: relative;
+        top: -323px;
+        left: -0;
+      }
+      .company__about__list__circle{
+        display: none;
+      }
+    }
+    .company__about__list__text{
+      margin-right: auto;
+
+      h1{
+        font-size: 35px;
+      }
+      p{
+        width: 290px;
+      }
+      .cards__company{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        justify-content: center;
+        align-items: center;
+        .company__card{
+          width: 290px;
+          gap: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 0;
+          margin-right: 17px;
+          .tx{
+            white-space: nowrap;
+          }
+        }
+      }
+
     }
   }
 }

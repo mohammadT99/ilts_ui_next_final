@@ -1,15 +1,18 @@
 .program {
-  margin-top: 850px;
+  margin-top: 950px;
+
   .program__hrader {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+
     h1 {
       font-size: 45px;
       font-weight: 700;
     }
+
     p {
       width: 900px;
       font-size: 16px;
@@ -28,4 +31,112 @@
   flex-wrap: wrap;
 }
 
+/*
+|==================== responsive ==========//
+*/
+@media only screen and (max-width: 768px) {
+  .program {
+    margin-top: 700px;
+
+    .program__hrader {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 45px;
+
+      p {
+        width: 650px;
+        text-align: center;
+      }
+    }
+
+    .program__crad {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-right: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .program {
+    margin-top: 700px;
+
+    .program__hrader {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 45px;
+
+      p {
+        width: 375px;
+        text-align: center;
+      }
+    }
+
+    .program__crad {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .program {
+    margin-top: 700px;
+
+    .program__hrader {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 45px;
+
+      p {
+        width: 350px;
+        text-align: center;
+      }
+    }
+
+    .program__crad {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .program {
+    margin-top: 700px;
+
+    .program__hrader {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 45px;
+
+      p {
+        width: 280px;
+        text-align: center;
+      }
+    }
+
+    .program__crad {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      margin-right: 18px;
+    }
+  }
+}
 

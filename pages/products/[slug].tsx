@@ -8,20 +8,10 @@ import {useRouter} from 'next/router';
 import {useEffect, useState} from "react";
 import {toast} from "react-toastify";
 import {ArrowCircleDown2, Bag, DocumentText, Firstline, ShieldTick, Task} from "iconsax-react";
-import BarBack from "@/components/BarBack";
 import DefaultLayout from "@/layouts/default";
-import {Link} from "@nextui-org/link";
 import VideoPlayer from "@/components/VideoPlayer/VideoPlayer";
-import {BookmarkIcon} from "@/components/BookmarkIcon";
-import DescriptionTab from "@/components/DescriptionTab/DescriptionTab";
-import NewBreadcrumbs from "@/components/NewBreadcrumbs";
 import Image from "next/image";
 import banner from '../../public/header.svg'
-import endBanner from '../../public/end_background.png'
-
-import {User} from "@nextui-org/react";
-import LightNavBar from "@/components/LightNavBar";
-import LightBreadcrumb from '@/components/bradcrump/LightBreadcrumb';
 import PurchaseAssuranceItems from "@/components/PurchaseAssuranceCard";
 import CourseResults from "@/components/CourseResults";
 import SalesAdvisor from "@/components/SalesAdvisor";
@@ -44,15 +34,7 @@ export default function Page() {
                     setIsLoad(false)
                     setProduct(data)
                 });
-
-
-            setTimeout(() => {
-                if (!product) {
-                    toast('مشکلی به وجود امده لطفا دوباره امتحان کنید!!');
-                }
-            }, 5000)
         }
-
 
     }
 
@@ -63,7 +45,6 @@ export default function Page() {
         p.classList.toggle(styles.add_h);
         i.classList.toggle(styles.product_description__btn__icon)
 
-
     }
 
     //
@@ -71,14 +52,13 @@ export default function Page() {
     //     showProduct();
     // }, [slug]);
 
-    
 
     const defaultContent =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
     return (
         <>
-            <DefaultLayout >
+            <DefaultLayout>
                 <SalesAdvisor/>
                 <div className={styles.main_header}>
                     <Image src={banner} className={styles.main_background} alt={'asd'}/>
@@ -111,7 +91,6 @@ export default function Page() {
                                 <VideoPlayer/>
                             </div>
 
-
                         </div>
 
                     </div>
@@ -122,7 +101,7 @@ export default function Page() {
                        <span className={styles.cart_title}>
                            طول دوره
                         </span>
-                                <span className={styles.cart_body}>
+                                <span className={` ${styles.cart_body}`}>
                         ۵۵ ساعت آموزش</span>
 
                             </div>
@@ -153,11 +132,9 @@ export default function Page() {
 
                     </div>
                 </div>
-
-
                 <div className={styles.product_description}>
 
-                    <h2 className={`flex items-center gap-4`}>
+                    <h2 className={`flex items-center gap-4 ${styles.product_description_title}` }>
                         <DocumentText size={60} color={'#525fe1'} className={`align-middle`}/>
                         آشنایی با دوره متخصص React (ری اکت دولوپر)
 
@@ -198,17 +175,14 @@ export default function Page() {
                     <Button className={styles.product_description__btn} color={"primary"}
                             onClick={Addwidth}><ArrowCircleDown2 id={'icon'}/>مشاهده </Button>
                 </div>
-
-
                 <div className={styles.product_session_title_sec}>
                     <h2 className={styles.product_session_title_main}>
                         <Task size={55} color={'#525fe1'} className={`align-middle`}/>
                         سرفصل‌های دوره
 
                     </h2>
-
-                    <div className={styles.product_session_title}>
-                        <Accordion variant="splitted">
+                    <div className={styles.product_session_title} >
+                        <Accordion variant="splitted" className={styles.product_session_title_acc}>
                             <AccordionItem key="1" aria-label="Accordion 1" title={'مقدمه'}>
 
                                 {defaultContent}
@@ -227,24 +201,23 @@ export default function Page() {
 
 
                 <div className={styles.purchase_assurance}>
-                        <div className={styles.purchase_assurance_header}>
-                            <ShieldTick size={65} color={'#525fe1'} className={`mb-14`}/>
-                            <h2 className={styles.purchase_assurance_title}>
-                                با خیال راحت آموزش ببینید
-                            </h2>
-                        </div>
+                    <div className={styles.purchase_assurance_header}>
+                        <ShieldTick size={80} color={'#525fe1'} className={`mb-14`}/>
+                        <h2 className={styles.purchase_assurance_title}>
+                            با خیال راحت آموزش ببینید
+                        </h2>
+                    </div>
                     <div className={styles.purchase_assurance_items}>
-                        <PurchaseAssuranceItems />
-                        <PurchaseAssuranceItems />
-                        <PurchaseAssuranceItems />
-                        <PurchaseAssuranceItems />
-                        <PurchaseAssuranceItems />
-                        <PurchaseAssuranceItems />
+                        <PurchaseAssuranceItems/>
+                        <PurchaseAssuranceItems/>
+                        <PurchaseAssuranceItems/>
+                        <PurchaseAssuranceItems/>
+
                     </div>
                 </div>
-                <CourseResults />
+                <CourseResults/>
                 <CourseInstructor/>
-                <VideoSection />
+                <VideoSection/>
 
             </DefaultLayout>
         </>

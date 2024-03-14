@@ -5,7 +5,8 @@ import styles from '@/styles/navbar.module.scss'
 import Image from "next/image";
 import config from "tailwindcss/defaultConfig";
 import {siteConfig} from "@/config/site";
-import { UserAdd } from "iconsax-react";
+import { UserAdd ,SearchNormal } from "iconsax-react";
+
 
 export default function NavbarSite() {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -68,6 +69,7 @@ export default function NavbarSite() {
 						<UserAdd />
 					</Button>
 				</NavbarItem>
+
 			</NavbarContent>
 
 			<NavbarMenu className={`mt-5`}>

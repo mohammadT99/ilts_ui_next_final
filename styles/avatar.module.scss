@@ -18,3 +18,52 @@
     color: #aaaaaa;
   }
 }
+@media only screen and (max-width: 425px ) {
+
+  .avatar{
+    .avatar_image{
+      width: 80px;
+    }
+    .avatar_title{
+      font-size:16px ;
+      white-space: nowrap;
+    }
+    .avatar_desc{
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px ) {
+
+  .avatar{
+    .avatar_image{
+      width: 60px;
+    }
+    .avatar_title{
+      font-size:16px ;
+      white-space: nowrap;
+    }
+    .avatar_desc{
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 320px ) {
+
+  .avatar{
+    .avatar_image{
+      width: 60px;
+    }
+    .avatar_title{
+      font-size:16px ;
+      white-space: nowrap;
+    }
+    .avatar_desc{
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

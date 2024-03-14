@@ -3,7 +3,7 @@
  */
 
 .about {
-  margin-top:200px ;
+  margin-top:300px ;
   .about__header {
     display: flex;
     flex-direction: column;
@@ -73,10 +73,121 @@
  | ================================ mobile  reponsive disign  ================= //
  */
 
-@media only screen and (max-width:836px) {
-  .about {
-    .about__header {
-      margin-top: 100px;
+@media only screen and (max-width: 1024px) {
+  .about{
+    margin-top:25px;
+    .about__header{
+
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1{
+        font-size:45px ;
+        text-align: center;
+
+      }
+
+      p{
+        width: 100%;
+      }
+    }
+    .about__crads{
+      display: flex;
+      flex-direction: row;
+      gap: 24px  ;
+      flex-wrap: wrap;
+      align-items: center;
+      //background: #000;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about{
+    margin-top:-50px;
+    .about__header{
+
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1{
+        font-size:35px ;
+        text-align: center;
+
+      }
+
+      p{
+        width: 100%;
+      }
+    }
+    .about__crads{
+      display: flex;
+      flex-direction: row;
+      gap: 24px  ;
+      flex-wrap: wrap;
+      align-items: center;
+      //background: #000;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .about{
+    margin-top: 150px;
+
+    .about__header{
+
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1{
+        font-size:24px ;
+        text-align: center;
+
+      }
+
+      p{
+        width: 400px;
+      }
+    }
+    .about__crads{
+      display: flex;
+      flex-direction: column;
+      gap: 12px  ;
+      flex-wrap: nowrap;
+      align-items: center;
+      //background: #000;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .about{
+    margin-top: 150px;
+
+    .about__header{
+      //margin-top: 20px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1{
+        font-size:24px ;
+        text-align: center;
+
+      }
+
+      p{
+        width: 300px;
+      }
+    }
+    .about__crads{
+      display: flex;
+      flex-direction: column;
+      gap: 12px  ;
+      flex-wrap: nowrap;
+      align-items: center;
+      //background: #000;
     }
   }
 }
@@ -84,7 +195,7 @@
  // ================== 320px ================= //
  @media only screen and (max-width: 320px) {
    .about{
-    margin-top: 20px;
+    margin-top: 150px;
 
      .about__header{
        //margin-top: 20px;

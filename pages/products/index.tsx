@@ -23,11 +23,11 @@ const Index = () => {
                 setLoading(false)
 
             })
-        setTimeout(() => {
-            if (product.length === 0) {
-                toast('مشکلی به وجود امده لطفا دوباره امتحان کنید!!');
-            }
-        }, 5000)
+        // setTimeout(() => {
+        //     if (product.length === 0) {
+        //         toast('مشکلی به وجود امده لطفا دوباره امتحان کنید!!');
+        //     }
+        // }, 5000)
 
     }
 
@@ -37,30 +37,31 @@ const Index = () => {
     }, []);
 
     return <DefaultLayout>
+        <div className="container-box">
+            <Breadcrumb links='محصولات' links_before=''/>
+            <div className={styles.content_products}>
 
-        <Breadcrumb links='محصولات' links_before=''/>
-        <div className={styles.content_products}>
-
-            <div className={styles.content_product_list}>
-                {
-                    product.length === 0 ? (
-                        <>
-                            <CardLoarder/>
-                            <CardLoarder/>
-                            <CardLoarder/>
-                        </>
-                    ) : (
-                        <>
-                            {product.map((item, key) => {
-                                return (
-                                    <CardProduct key={item.id} data={item}/>
-                                )
-                            })}
-                        </>
-                    )
-                }
+                <div className={styles.content_product_list}>
+                    {
+                        product.length === 0 ? (
+                            <>
+                                <CardLoarder/>
+                                <CardLoarder/>
+                                <CardLoarder/>
+                            </>
+                        ) : (
+                            <>
+                                {product.map((item, key) => {
+                                    return (
+                                        <CardProduct key={key} data={item}/>
+                                    )
+                                })}
+                            </>
+                        )
+                    }
+                </div>
+                <Sidebar/>
             </div>
-            <Sidebar/>
         </div>
     </DefaultLayout>
 

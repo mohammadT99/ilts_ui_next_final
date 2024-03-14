@@ -10,35 +10,35 @@ import ImagebgBanner from '@/public/Images/image-banner.png';
 export default function Banner() {
     return (
         <>
-           <div className="container-box">
-               <SvgHeader/>
-               <section className={styles.banner}>
-                   <div className={``}>
-                       <div className={`z-1 ${styles.banner__content}`}>
-                           <div className={styles.banner__content__left}>
-                               <div className={styles.banner__content__left__header}>
-                                   <p className={styles.text_header}>
-                                       انلاین <span className={`text-blue-600`}>یادگیری که می توانید به آن دسترسی داشته باشید</span>هر
-                                       جا به راحتی!
-                                   </p>
-                                   <span className={`text-gray-500`}
-                                   >   Lorem Epsom یک متن ساختگی است که با نامفهوم تولید شده است
+            <div className="container-box">
+                <SvgHeader/>
+                <section className={styles.banner}>
+                    <div className={``}>
+                        <div className={`z-1 ${styles.banner__content}`}>
+                            <div className={styles.banner__content__left}>
+                                <div className={styles.banner__content__left__header}>
+                                    <p className={styles.text_header}>
+                                        انلاین <span className={`text-blue-600`}>یادگیری که می توانید به آن دسترسی داشته باشید</span>هر
+                                        جا به راحتی!
+                                    </p>
+                                    <span className={`text-gray-500`}
+                                    >   Lorem Epsom یک متن ساختگی است که با نامفهوم تولید شده است
                    سادگی از صنعت چاپ و استفاده شده توسط گرافیک
                    طراحان چاپگرها و متون، بلکه روزنامه و مجله
                    در ستون و سطر در صورت لزوم و برای a</span
-                                   >
-                               </div>
-                               <div className={styles.banner__content__left__button}>
-                                   <Button className={`bg-warning-500 font-normalt`}>دوره ها</Button>
-                                   <div className={styles.video}>
+                                    >
+                                </div>
+                                <div className={styles.banner__content__left__button}>
+                                    <Button className={`bg-warning-500 font-normalt`}>دوره ها</Button>
+                                    <div className={styles.video}>
                   <span className={styles.icon}>
                       <Image src={Icon1} alt={''}/>
                   </span>
-                                       <p>ببینید چگونه کار می کند؟</p>
-                                   </div>
-                               </div>
-                           </div>
-                           <div className={styles.banner__content__right}>
+                                        <p>ببینید چگونه کار می کند؟</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.banner__content__right}>
               <span>
                 <svg
                     width="533"
@@ -57,9 +57,9 @@ export default function Banner() {
                   />
                 </svg>
               </span>
-                               <div className={styles.banner__content__right__img}>
-                                   <Image src={ImagebgBanner} alt={''}/>
-                                   <div className={styles.circle}>
+                                <div className={styles.banner__content__right__img}>
+                                    <Image src={ImagebgBanner} alt={''} className={styles.img}/>
+                                    <div className={styles.circle}>
                   <span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -71,39 +71,39 @@ export default function Banner() {
                       <circle cx="62" cy="62" r="62" fill="#F9CA54"/>
                     </svg>
                   </span>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div className={styles.banner__content__end}>
-                           <Image src={ImageEndBanner} className={styles.banner__content__end__image} alt={''}>
-                           </Image>
-                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.banner__content__end}>
+                            <Image src={ImageEndBanner} className={styles.banner__content__end__image} alt={''}>
+                            </Image>
+                        </div>
 
 
-                       <div className={styles.content}>
-                           <div className={styles.txt}>
-                               <p>۱۵۰+</p>
-                               <span>مجموع دوره ها</span>
-                           </div>
-                           <div className={styles.txt}>
-                               <p>۱۵۰+</p>
-                               <span>مجموع دوره ها</span>
-                           </div>
-                           <div className={styles.txt}>
-                               <p>۱۵۰+</p>
-                               <span>مجموع دوره ها</span>
-                           </div>
-                           <div className={styles.txt}>
-                               <p>۱۵۰+</p>
-                               <span>مجموع دوره ها</span>
-                           </div>
-                       </div>
-                       <div>
-                       </div>
-                   </div>
-               </section>
-           </div>
+                        <div className={styles.content}>
+                            <div className={styles.txt}>
+                                <p>۱۵۰+</p>
+                                <span>مجموع دوره ها</span>
+                            </div>
+                            <div className={styles.txt}>
+                                <p>۱۵۰+</p>
+                                <span>مجموع دوره ها</span>
+                            </div>
+                            <div className={styles.txt}>
+                                <p>۱۵۰+</p>
+                                <span>مجموع دوره ها</span>
+                            </div>
+                            <div className={styles.txt}>
+                                <p>۱۵۰+</p>
+                                <span>مجموع دوره ها</span>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
         </>
     )

@@ -1,12 +1,13 @@
 import React from "react";
 import styles from  "@/styles/card_blog.module.scss"
 import imageblog from '@/public/Images/imageProduct.png'
-import Image from "next/image";
+
 
 import {Comment} from "postcss";
 import {Messages2} from "iconsax-react";
 import {Link} from "@nextui-org/link";
-export default function  CardBlog (){
+import {Image} from "@nextui-org/react";
+export default function  CardBlog ({data}){
 
     const article= [
         {
@@ -16,10 +17,10 @@ export default function  CardBlog (){
     ]
     return (
         <>
-            <Link className={styles.card_blog} href={'/blog/test'}>
-                <Image src={imageblog} alt={''} />
+            <Link className={styles.card_blog} href={`/blog/id:${data.id}`}>
+                <Image src={data.image} alt={''} width={170} height={100} className={styles.card_blog_cover} />
                 <div className={styles.title}>
-                    <p>اموزش زبان</p>
+                    <p>{data.title}</p>
                     </div>
                 <div className={styles.description}>
                     <div className={styles.box_data}>
@@ -36,7 +37,7 @@ export default function  CardBlog (){
                         </div>
                     </div>
                     <div className={styles.text}>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود</p>
+                        <p>{data.description}</p>
                     </div>
                 </div>
             </Link>

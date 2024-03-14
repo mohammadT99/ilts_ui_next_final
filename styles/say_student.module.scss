@@ -1,5 +1,5 @@
 .student__say {
-  margin-top:100px ;
+  margin-top:200px ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +36,7 @@
   max-width: max-content;
   padding: 14px 30px;
   height: 236px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   p {
     text-align: center;
     margin-left: auto;
@@ -56,6 +57,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   //background-color: red;
 }
 
@@ -84,4 +86,119 @@
     top: -140px;
   }
 
+}
+@media only screen and (max-width: 768px)  {
+  .student__say{
+    text-align: center;
+    .student__say__header{
+      h1{
+        font-size: 40px;
+      }
+      p{
+        width: 650px;
+      }
+    }
+    .student__say__content{
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 750px;
+      padding: 14px;
+
+      p{
+        //width: 750px;
+      }
+    }
+    .user__box{
+      top: -35px;
+      right:auto ;
+      left: auto;
+    }
+  }
+}
+@media only screen and (max-width: 425px)  {
+  .student__say{
+    text-align: center;
+    .student__say__header{
+      h1{
+        font-size: 40px;
+      }
+      p{
+        width: 375px;
+      }
+    }
+    .student__say__content{
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 400px;
+      padding: 14px;
+
+      p{
+        width: 375px;
+      }
+    }
+    .user__box{
+      top: -50px;
+      right:auto ;
+      left: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px)  {
+  .student__say{
+    text-align: center;
+    .student__say__header{
+      padding-inline: 15px;
+      h1{
+        font-size: 40px;
+      }
+      p{
+        width: 320px;
+      }
+    }
+    .student__say__content{
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 350px;
+      padding: 14px;
+
+      p{
+        width: 300px;
+      }
+    }
+    .user__box{
+      top: -50px;
+      right:auto ;
+      left: auto;
+    }
+  }
+}
+@media only screen and (max-width: 320px)  {
+  .student__say{
+    text-align: center;
+    .student__say__header{
+      padding-inline: 15px;
+      h1{
+        font-size: 35px;
+      }
+      p{
+        width: 280px;
+      }
+    }
+    .student__say__content{
+      margin-right:12px;
+      max-width: 300px;
+      padding: 14px;
+
+      p{
+        line-height: normal;
+        width: 280px;
+      }
+    }
+    .user__box{
+      top: -50px;
+      right:auto ;
+      left: auto;
+    }
+  }
 }

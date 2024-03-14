@@ -1,42 +1,93 @@
 .sidebar {
-    
-    margin-top: 15px;
-    width: 250px ;
-    // height: 50vh;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+  margin-top: 0px;
+  width: 320px;
+  // height: 50vh;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+
 }
 
-.header_sidebar{
-   flex-wrap: wrap;
-   gap: 16px;
-   margin-left: 6px;
-    .btn_sidebar {
-        width: 100px;
-        font-size:10px;
-        font-weight:600;
-        transition: all 0.2s ease;
-        background-color: #F0EDCF;
-        &:hover {
+.header_sidebar {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-left: 6px;
 
-            border-bottom: 3px solid #525FE1;
-        }
-        
+  .btn_sidebar {
+    width: 100%;
+    max-width: 85px;
+    font-size: 10px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: 1px solid #eee;
+    background: none;
+    &:hover {
+      background: #D2E0FB;
     }
-}
 
+  }
+}
 
 
 // -------------------------- responsive--------------//
-@media only  screen and (max-width:310px) {
-    .content_product_list {
-        display: flex;
-        flex-direction: column;
-    }
-        .content_products {
-            display: flex;
-            flex-direction: column;
-        }
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    margin-top: 40px;
+    width: 715px;
+  }
+  .content_product_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_products {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .sidebar {
+    margin-top: 40px;
+    width: 375px;
+  }
+  .content_product_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_products {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .sidebar {
+    margin-top: 40px;
+    width: 320px;
+  }
+  .content_product_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_products {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .sidebar {
+    margin-top: 40px;
+    width: 280px;
+  }
+  .content_product_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_products {
+    display: flex;
+    flex-direction: column;
+  }
 }

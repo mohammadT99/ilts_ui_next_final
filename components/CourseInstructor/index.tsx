@@ -29,7 +29,7 @@ export default function  CourseInstructor () {
                                 <h1>منتورهای دوره
                                 </h1>
                                 <p>دوستان زیر منتور متخصص React هستند و در طول دوره به سوالات شما پاسخ میدن و همراهتون هستند.</p>
-                               <div className={`flex justify-center items-center gap-20`}>
+                               <div className={`flex justify-center items-center gap-20 ${styles.course_instructor_content_mentors_2_cards}`}>
                                    <MentorsCard/>
                                    <MentorsCard/>
                                </div>

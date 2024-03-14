@@ -11,10 +11,7 @@ export default function Sidebar() {
                     <Button className={styles.btn_sidebar}>کلاس ها </Button>
                     <Button className={styles.btn_sidebar}>دوره ها </Button>
                     <Button className={styles.btn_sidebar}> محصولات</Button>
-                    <Button className={styles.btn_sidebar}>کتاب ها </Button>
-
                 </div>
-
                 <Accordion>
                     <AccordionItem key="1" aria-label="Accordion 1" title="فیلتر 1">
                         <Accordion>
@@ -34,7 +31,7 @@ export default function Sidebar() {
                         {defaultContent}
                     </AccordionItem>
                 </Accordion>
-            </div>‍‍‍
+            </div>
         </>
     )
 }

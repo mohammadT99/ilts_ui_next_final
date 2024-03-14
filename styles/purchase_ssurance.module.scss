@@ -49,3 +49,31 @@
 
   }
 }
+
+@media  only screen and (max-width: 1024px) {
+  .purches_items{
+    width: 750px;
+  }
+}
+@media  only screen and (max-width: 768px) {
+  .purches_items{
+    width: 425px;
+  }
+}
+@media  only screen and (max-width: 425px) {
+  .purches_items{
+    width: 375px;
+  }
+}
+
+@media  only screen and (max-width: 375px) {
+  .purches_items{
+    width: 350px;
+  }
+}
+
+@media  only screen and (max-width: 320px) {
+  .purches_items{
+    width: 300px;
+  }
+}

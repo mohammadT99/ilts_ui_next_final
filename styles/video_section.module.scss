@@ -41,3 +41,132 @@
     }
   }
 }
+@media only screen and (max-width: 1024px) {
+  .video_section{
+
+    .video_section_title{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      h1{
+        text-align: center;
+        line-height: normal;
+      }
+    }
+    .video_player{
+      margin-top: 60px;
+      margin-right: -80px;
+      width: 100%;
+      .video_section_box{
+        top: -20px;
+        right: 650px;
+      }
+
+      .video{
+        width:600px !important;
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .video_section{
+
+    .video_section_title{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      h1{
+        text-align: center;
+        line-height: normal;
+      }
+    }
+    .video_player{
+      margin-top: 40px;
+      margin-right: -80px;
+      width: 100%;
+      .video_section_box{
+        top: -25px;
+        right: 525px;
+        height: 280px;
+
+      }
+      .video{
+        width:500px !important;
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .video_section{
+
+    .video_section_title{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      h1{
+        text-align: center;
+        line-height: normal;
+      }
+    }
+    .video_player{
+      margin-top: -50px;
+      margin-right: -25px;
+      width: 100%;
+
+      .video{
+        width:800px !important;
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .video_section{
+
+    .video_section_title{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      h1{
+        text-align: center;
+        line-height: normal;
+      }
+    }
+    .video_player{
+      margin-top: -50px;
+      margin-right: -25px;
+      width: 100%;
+
+      .video{
+        width:800px !important;
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .video_section{
+
+    .video_section_title{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      h1{
+        text-align: center;
+        line-height: normal;
+      }
+    }
+    .video_player{
+      margin-top: -50px;
+      margin-right: -25px;
+      width: 100%;
+
+      .video{
+        width:800px !important;
+
+      }
+    }
+  }
+}

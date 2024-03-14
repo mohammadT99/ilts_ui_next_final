@@ -16,14 +16,13 @@ import SayStudentSection from "@/components/SayStudent";
 export default function IndexPage() {
 	return (
 		<DefaultLayout>
-			<div className="container-box">
+
 				<Banner/>
 				<AboutSection/>
 				<Courses/>
 				<AboutCompany />
 				<Programmer />
 				<SayStudentSection/>
-			</div>
 		</DefaultLayout>
 	);
 }

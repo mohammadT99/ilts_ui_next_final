@@ -5,17 +5,30 @@
 }
 
 .courses__card {
-
-  flex: 1 1 calc(25% - 16px);
-  width: calc(25% - 16px);
-  max-width: calc(25% - 16px);
+  flex: 1 1 calc(35% - 16px);
+  width: 100%;
+  max-width: 350px;
   padding-bottom: 30px;
+
   .card__item {
     position: relative;
     background-color: white;
-    box-shadow: 0px 13px 28px 0px rgba(0, 0, 0, 0.06), 0px 51px 51px 0px rgba(0, 0, 0, 0.05), 0px 116px 69px 0px rgba(0, 0, 0, 0.03), 0px 206px 82px 0px rgba(0, 0, 0, 0.01), 0px 322px 90px 0px rgba(0, 0, 0, 0.00);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     border-radius: 10px;
     padding-bottom: 30px;
+    height: 350px;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .card__item__img {
+
+      .card__item__img_cover {
+        margin-top: 10px;
+        margin-right: 100px;
+      }
+    }
   }
 
   .courses__card {
@@ -29,26 +42,41 @@
     margin-inline: 18px;
     gap: 8px;
 
-    h2 {
+    .card__item__body_title {
       margin-top: 8px;
-      font-size: 1.2rem!important;
-      font-weight: 500!important;
+      font-size: 1rem !important;
+      font-weight: 600 !important;
+      height: 45px;
+      overflow: clip;
     }
-    .price_sec{
-      font-weight: 400;
-      font-size: 0.875rem;
 
-      color: #505050;
+    .price_sec {
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: #525FE1;
       display: flex;
+      align-items: center;
+      justify-content: space-between;
       column-gap: 8px;
-      justify-content: flex-end;
-      .price{
+
+      .discount {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 4px 10px;
+        background: #DFF5FF;
+        border-radius: 10px;
+        border: 1px solid #eee;
+      }
+
+      .price {
         font-weight: 600;
       }
-      .price_label{
+
+      .price_label {
 
       }
     }
+
     padding: 6px;
   }
 
@@ -82,28 +110,77 @@
 }
 
 .cardbtn {
-
-  position: absolute!important;
+  position: absolute !important;
   top: 100%;
   right: 50%;
-  transform: translate3d(50% , -50% , 0)!important;
+  transform: translate3d(50%, -50%, 0) !important;
+  width: 250px;
+  height: 45px;
 }
 
 .card__item__img {
   height: 200px;
   //margin: 10px;
   //width: 350px;
-  border: 1px solid #ccc;
+  //border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+  .card__item__img_cover {
+    margin: auto;
+
+  }
 }
 
 
-@media only screen and (max-width: 320px) {
-  .courses__card{
+/*
+|=================== responsive ====== //
+*/
 
-    .card__item{
+//1024
+@media only screen and (max-width: 1024px) {
+  .courses__card {
+    .card__item {
+      width: 320px;
+      margin-inline: 0;
+    }
+  }
+}
+
+//768
+@media only screen and (max-width: 768px) {
+  .courses__card {
+    .card__item {
+      width: 320px;
+      margin-inline: 0;
+    }
+  }
+}
+
+//425px
+@media only screen and (max-width: 425px) {
+  .courses__card {
+    .card__item {
+      width: 375px;
+      margin-inline: 0;
+    }
+  }
+}
+
+//375 px
+@media only screen and (max-width: 375px) {
+  .courses__card {
+    .card__item {
+      width: 330px;
+      margin-inline: 0;
+    }
+  }
+}
+
+//320px
+@media only screen and (max-width: 320px) {
+  .courses__card {
+    .card__item {
       width: 280px;
       margin-inline: 0;
     }

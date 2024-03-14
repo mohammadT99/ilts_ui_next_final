@@ -591,71 +591,66 @@
   display: flex;
   justify-content: space-between;
   width: 1440px;
-
+  align-items: flex-start;
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
 
   .content_product_list {
-    flex: 1 1 80%;
-    max-width: 80%;
-    width: 75%;
+    flex: 1 1 70%;
+    max-width: 100%;
+    padding-inline: 5px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 16px;
-    row-gap: 16px;
+    column-gap: 24px;
+    row-gap: 24px;
   }
+}
+.courses__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  // width: 360px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.light_breadcrumbs {
+  width: 1440px;
+  margin: auto;
 }
 
 //------------//
-//responsive
+
 @media only screen and (max-width: 1024px) {
-  .video_card {
-    display: flex;
-    gap: 10px;
-    //margin-left: 50px;
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .video_card {
+  .content_products {
+    margin-top: 20px;
+    display: block;
+    margin-inline:20px;
+
+    gap: 0px;
+    .content_product_list{
+      width: 780px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 28px;
+    }
+
+  }
+  .loader_card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    //margin-left: 50px;
+    align-items: center;
+    margin-left: 0;
+    //margin-right: 20px;
   }
-}
-
-@media only screen and (max-width: 430px) {
-  .video_card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    //margin-left: 50px;
-  }
-  .video_box {
-    img {
-      width: 390px;
-      height: 250px
-    }
-  }
-  .description_box_header {
-    .description_box_header_h1 {
-      width: 300px;
-    }
-
-  }
-  .description_box_description {
-    p {
-      width: 300px;
-    }
-  }
-  .price_button {
-    width: 165px;
-  }
-}
-
-@media only screen and (max-width: 380px) {
   .description_box {
     padding: 10px;
   }
@@ -667,7 +662,7 @@
   }
   .video_box {
     img {
-      width: 340px;
+      width: 300px;
       height: 200px
     }
   }
@@ -695,18 +690,327 @@
     width: 140px;
 
   }
-}
+  .main_header{
+    .main_background{
+      width: 1024px;
+      height: 712px;
+    }
+    .main_header_sec{
+      margin-top: -100px;
+      padding-inline: 20px;
+      margin-right: 45px;
+      display: flex;
+      flex-direction: row;
+      gap: 45px;
+      .main_header_info{
+        width: 425px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        .main_title{
+          font-size:45px;
+        }
+      }
+      .video_player_sec{
+        margin-top: 20px;
+        width: 425px;
+        .video_player_sec_bg{
+          top: 70px;
+          right: 250px;
+        }
+      }
+    }
+    .main_header_cart_sec{
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      padding-inline: 25px;
+      align-items: center;
+      gap: 250px;
+      .main_header_cart_inner{
+        padding-inline:20px ;
+        gap: 80px;
+        .main_header_cart{
+          display: flex;
+          flex-direction: column;
+          .cart_title{
+            font-size: 16px;
+          }
+          .cart_body{
+            font-size: 16px ;
+            white-space: nowrap;
+          }
+        }
+      }
+      .teacher_sec{
+        padding-inline:20px ;
+        margin-inline: auto;
+        .teacher_info{
+          .teacher_info_title{
+            font-size: 20px;
+          }
+          .teacher_info_sub_title{
+            width: 200px;
+            line-height: 25px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .product_description{
+    height:max-content;
+    margin-top: -200px;
+    width: 100%;
+    margin-right: 0px;
 
-@media only screen and (max-width: 320px) {
+    .product_description_title{
+      display: flex;
+      flex-direction: column !important;
+      width: 870px;
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    p{
+      text-align: center;
+      width: 850px;
+    }
+    .add_h{
+      height: 715px;
+    }
+  }
+
+  .product_session_title_sec{
+    .product_session_title_main{
+      display: flex;
+      flex-direction: column !important ;
+      font-size: 35px;
+    }
+    .product_session_title{
+      width: 780px !important;
+    }
+
+  }
+
+  .purchase_assurance{
+    width: 650px;
+    .purchase_assurance_header{
+      display: flex;
+      flex-direction: column;
+      gap: 0px ;
+    }
+    .purchase_assurance_items{
+
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
 
   .content_products {
     margin-top: 20px;
+    display: block;
+    margin-inline:20px;
+
+    gap: 0px;
+    .content_product_list{
+      width: 780px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 28px;
+    }
+
+  }
+  .loader_card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-    //padding-inline: 50px;
-    gap: 12px;
+    margin-left: 0;
+    //margin-right: 20px;
+  }
+  .description_box {
+    padding: 10px;
+  }
+  .video_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    //margin-left: 50px;
+  }
+  .video_box {
+    img {
+      width: 300px;
+      height: 200px
+    }
+  }
+  .description_box_header {
+    gap: 14px;
+
+    .description_box_header_h1 {
+      width: 233px;
+    }
+
+  }
+  .description_box_description {
+    margin-top: 14px;
+
+    p {
+      width: 279px;
+    }
+  }
+  .description_box_buttons {
+    .price_box {
+      gap: 6px;
+    }
+  }
+  .price_button {
+    width: 140px;
+
+  }
+  .main_header{
+    .main_background{
+      width: 320px;
+      height: 712px;
+    }
+    .main_header_sec{
+      margin-top: -200px;
+      padding-inline: 20px;
+      margin-right: 45px;
+      display: flex;
+      flex-direction: row;
+      gap: 65px;
+      .main_header_info{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 0px;
+        .main_title{
+          font-size:35px;
+        }
+      }
+      .video_player_sec{
+        margin-top: 0px;
+        width: 300px;
+        .video_player_sec_bg{
+          top: 85px;
+          right: 90px;
+        }
+      }
+    }
+    .main_header_cart_sec{
+      margin-top: -80px;
+      width: 100%;
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      gap: 34px;
+      .main_header_cart_inner{
+        padding-inline:20px ;
+        gap: 80px;
+        .main_header_cart{
+          display: flex;
+          flex-direction: column;
+          .cart_title{
+            font-size: 16px;
+          }
+          .cart_body{
+            font-size: 16px ;
+            white-space: nowrap;
+          }
+        }
+      }
+      .teacher_sec{
+        padding-inline:20px ;
+        margin-inline: auto;
+        .teacher_info{
+          .teacher_info_title{
+            font-size: 20px;
+          }
+          .teacher_info_sub_title{
+            width: 200px;
+            line-height: 25px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .product_description{
+    height:max-content;
+    margin-top: -200px;
+    width: 100%;
+    margin-right: 0px;
+
+    .product_description_title{
+      display: flex;
+      flex-direction: column !important;
+      width: 650px;
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    p{
+      text-align: center;
+      width: 650px;
+    }
+    .add_h{
+      height: 715px;
+    }
+  }
+
+  .product_session_title_sec{
+    .product_session_title_main{
+      display: flex;
+      flex-direction: column !important ;
+      font-size: 35px;
+    }
+    .product_session_title{
+      width: 650px !important;
+    }
+
+  }
+
+  .purchase_assurance{
+    width: 320px;
+    .purchase_assurance_header{
+      display: flex;
+      flex-direction: row;
+      gap: 12px ;
+    }
+    .purchase_assurance_items{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+
+  .content_products {
+    margin-top: 20px;
+    display: block;
+
+    margin-inline:20px;
+
+    gap: 0px;
+    .content_product_list{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
 
   }
   .loader_card {
@@ -757,20 +1061,614 @@
   }
 }
 
-.courses__cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  // width: 360px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (max-width: 375px) {
+
+  .content_products {
+    margin-top: 20px;
+    display: block;
+
+    margin-inline:20px;
+
+    gap: 0px;
+    .content_product_list{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+  }
+  .loader_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    //margin-right: 20px;
+  }
+  .description_box {
+    padding: 10px;
+  }
+  .video_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    //margin-left: 50px;
+  }
+  .video_box {
+    img {
+      width: 300px;
+      height: 200px
+    }
+  }
+  .description_box_header {
+    gap: 14px;
+
+    .description_box_header_h1 {
+      width: 233px;
+    }
+
+  }
+  .description_box_description {
+    margin-top: 14px;
+
+    p {
+      width: 279px;
+    }
+  }
+  .description_box_buttons {
+    .price_box {
+      gap: 6px;
+    }
+  }
+  .price_button {
+    width: 140px;
+
+  }
+
+}
+@media only screen and (max-width: 425px) {
+
+  .content_products {
+    margin-top: 20px;
+    display: block;
+
+    margin-inline:20px;
+
+    gap: 0px;
+    .content_product_list{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+  }
+  .loader_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    //margin-right: 20px;
+  }
+  .description_box {
+    padding: 10px;
+  }
+  .video_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    //margin-left: 50px;
+  }
+  .video_box {
+    img {
+      width: 300px;
+      height: 200px
+    }
+  }
+  .description_box_header {
+    gap: 14px;
+
+    .description_box_header_h1 {
+      width: 233px;
+    }
+
+  }
+  .description_box_description {
+    margin-top: 14px;
+
+    p {
+      width: 279px;
+    }
+  }
+  .description_box_buttons {
+    .price_box {
+      gap: 6px;
+    }
+  }
+  .price_button {
+    width: 140px;
+
+  }
+  //blog
+  .main_header{
+    .main_background{
+      width: 320px;
+      height: 712px;
+    }
+    .main_header_sec{
+      margin-top: -200px;
+      padding-inline: 20px;
+      margin-right: 45px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      .main_header_info{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 0px;
+        .main_title{
+          font-size:35px;
+        }
+      }
+      .video_player_sec{
+        margin-top: -200px;
+        width: 280px;
+        .video_player_sec_bg{
+          top: 85px;
+          right: 90px;
+        }
+      }
+    }
+    .main_header_cart_sec{
+      margin-top: -80px;
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      gap: 34px;
+      .main_header_cart_inner{
+        padding-inline:20px ;
+        gap: 60px;
+        .main_header_cart{
+          display: flex;
+          flex-direction: column;
+          .cart_title{
+            font-size: 16px;
+          }
+          .cart_body{
+            font-size: 16px ;
+            white-space: nowrap;
+          }
+        }
+      }
+      .teacher_sec{
+        padding-inline:20px ;
+        margin-inline: auto;
+        .teacher_info{
+          .teacher_info_title{
+            font-size: 20px;
+          }
+          .teacher_info_sub_title{
+            width: 200px;
+            line-height: 25px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .product_description{
+    height:max-content;
+    margin-top: -200px;
+    width: 100%;
+    margin-right: 0px;
+
+    .product_description_title{
+      display: flex;
+      flex-direction: column !important;
+      width: 350px;
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    p{
+      text-align: center;
+      width: 320px;
+    }
+    .add_h{
+      height: 715px;
+    }
+  }
+
+  .product_session_title_sec{
+    .product_session_title_main{
+      display: flex;
+      flex-direction: column !important ;
+      font-size: 35px;
+    }
+    .product_session_title{
+      width: 375px !important;
+    }
+
+  }
+
+  .purchase_assurance{
+    width: 320px;
+    .purchase_assurance_header{
+      display: flex;
+      flex-direction: column;
+      gap: 0px ;
+    }
+    .purchase_assurance_items{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+
+  .content_products {
+    margin-top: 20px;
+    display: block;
+
+    margin-inline:20px;
+
+    gap: 0px;
+    .content_product_list{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+  }
+  .loader_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    //margin-right: 20px;
+  }
+  .description_box {
+    padding: 10px;
+  }
+  .video_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    //margin-left: 50px;
+  }
+  .video_box {
+    img {
+      width: 300px;
+      height: 200px
+    }
+  }
+  .description_box_header {
+    gap: 14px;
+
+    .description_box_header_h1 {
+      width: 233px;
+    }
+
+  }
+  .description_box_description {
+    margin-top: 14px;
+
+    p {
+      width: 279px;
+    }
+  }
+  .description_box_buttons {
+    .price_box {
+      gap: 6px;
+    }
+  }
+  .price_button {
+    width: 140px;
+
+  }
+  //blog
+  .main_header{
+    .main_background{
+      width: 320px;
+      height: 712px;
+    }
+    .main_header_sec{
+      margin-top: -200px;
+      padding-inline: 20px;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      .main_header_info{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 0px;
+        .main_title{
+          font-size:35px;
+        }
+      }
+      .video_player_sec{
+        margin-top: -200px;
+        width: 280px;
+        .video_player_sec_bg{
+          top: 85px;
+          right: 90px;
+        }
+      }
+    }
+    .main_header_cart_sec{
+      margin-top: -80px;
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      gap: 34px;
+      .main_header_cart_inner{
+        padding-inline:20px ;
+        gap: 60px;
+        .main_header_cart{
+          display: flex;
+          flex-direction: column;
+          .cart_title{
+            font-size: 16px;
+          }
+          .cart_body{
+            font-size: 16px ;
+            white-space: nowrap;
+          }
+        }
+      }
+      .teacher_sec{
+        padding-inline:20px ;
+        margin-inline: auto;
+        .teacher_info{
+          .teacher_info_title{
+            font-size: 20px;
+          }
+          .teacher_info_sub_title{
+            width: 200px;
+            line-height: 25px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .product_description{
+    height:max-content;
+    margin-top: -200px;
+    width: 100%;
+    margin-right: 0px;
+
+    .product_description_title{
+      display: flex;
+      flex-direction: column !important;
+      width: 350px;
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    p{
+      text-align: center;
+      width: 320px;
+    }
+    .add_h{
+      height: 715px;
+    }
+  }
+
+  .product_session_title_sec{
+    .product_session_title_main{
+      display: flex;
+      flex-direction: column !important ;
+      font-size: 35px;
+    }
+    .product_session_title{
+      width: 320px !important;
+    }
+
+  }
+
+  .purchase_assurance{
+    width: 320px;
+    .purchase_assurance_header{
+      display: flex;
+      flex-direction: column;
+      gap: 0px ;
+    }
+    .purchase_assurance_items{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+
+  .content_products {
+    margin-top: 20px;
+    display: block;
+
+    margin-inline:20px;
+
+    gap: 0px;
+    .content_product_list{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+  }
+  .loader_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    //margin-right: 20px;
+  }
+  .description_box {
+    padding: 10px;
+  }
+  .video_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    //margin-left: 50px;
+  }
+  .video_box {
+    img {
+      width: 300px;
+      height: 200px
+    }
+  }
+  .description_box_header {
+    gap: 14px;
+
+    .description_box_header_h1 {
+      width: 233px;
+    }
+
+  }
+  .description_box_description {
+    margin-top: 14px;
+
+    p {
+      width: 279px;
+    }
+  }
+  .description_box_buttons {
+    .price_box {
+      gap: 6px;
+    }
+  }
+  .price_button {
+    width: 140px;
+
+  }
+  //blog
+  .main_header{
+      .main_background{
+        width: 320px;
+        height: 712px;
+      }
+    .main_header_sec{
+      margin-top: -200px;
+      padding-inline: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      .main_header_info{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 0px;
+        .main_title{
+          font-size:35px;
+        }
+      }
+      .video_player_sec{
+        margin-top: -200px;
+        margin-right: -20px;
+        width: 280px;
+       .video_player_sec_bg{
+        top: 85px;
+         right: 90px;
+       }
+      }
+    }
+    .main_header_cart_sec{
+      margin-top: -80px;
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      gap: 34px;
+      .main_header_cart_inner{
+        padding-inline:20px ;
+        gap: 60px;
+        .main_header_cart{
+          display: flex;
+          flex-direction: column;
+          .cart_title{
+            font-size: 16px;
+          }
+          .cart_body{
+            font-size: 16px ;
+            white-space: nowrap;
+          }
+        }
+      }
+      .teacher_sec{
+        padding-inline:20px ;
+        margin-inline: auto;
+        .teacher_info{
+          .teacher_info_title{
+            font-size: 20px;
+          }
+          .teacher_info_sub_title{
+            width: 200px;
+            line-height: 25px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .product_description{
+    height:max-content;
+    margin-top: -200px;
+    width: 100%;
+    margin-right: 0px;
+
+    .product_description_title{
+      display: flex;
+      flex-direction: column !important;
+      width: 300px;
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    p{
+      text-align: center;
+      width: 300px;
+    }
+    .add_h{
+      height: 715px;
+    }
+  }
+
+  .product_session_title_sec{
+    .product_session_title_main{
+      display: flex;
+      flex-direction: column !important ;
+      font-size: 35px;
+    }
+    .product_session_title{
+      width: 300px !important;
+    }
+
+  }
+
+  .purchase_assurance{
+    width: 320px;
+    .purchase_assurance_header{
+      display: flex;
+      flex-direction: column;
+      gap: 0px ;
+    }
+    .purchase_assurance_items{
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
-
-.light_breadcrumbs {
-  width: 1440px;
-  margin: auto;
-}

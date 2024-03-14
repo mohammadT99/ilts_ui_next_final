@@ -70,3 +70,220 @@
 
 
 }
+@media only screen and (max-width: 1024px) {
+
+  .course_result{
+    margin-right: auto;
+    width: 1024px;
+    .course_result_content{
+      padding-inline: 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center ;
+      justify-content: center;
+      gap: 25px;
+      .course_result_image{
+        width: 450px  ;
+      }
+      .course_result_text{
+        padding-inline: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .course_result_title{
+          font-size: 35px;
+          font-weight: bold;
+          text-align: center;
+          line-height: normal;
+
+        }
+        h2{
+
+          width: 425px !important;
+          text-align: center;
+        }
+        p{
+          text-align: center;
+        }
+
+      ;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 768px) {
+
+  .course_result{
+    margin-right: auto;
+    width: 768px;
+    .course_result_content{
+      padding-inline: 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center ;
+      justify-content: center;
+      gap: 25px;
+      .course_result_image{
+        width: 450px  ;
+      }
+      .course_result_text{
+        padding-inline: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .course_result_title{
+          font-size: 35px;
+          font-weight: bold;
+          text-align: center;
+          line-height: normal;
+
+        }
+        h2{
+
+          width: 425px !important;
+          text-align: center;
+        }
+        p{
+          text-align: center;
+        }
+
+      ;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 425px) {
+
+  .course_result{
+    margin-right: auto;
+    width: 425px;
+    .course_result_content{
+      display: flex;
+      flex-direction: column;
+      align-items: center ;
+      .course_result_image{
+        width: 280px  ;
+      }
+      .course_result_text{
+        padding-inline: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .course_result_title{
+          font-size: 35px;
+          font-weight: bold;
+          text-align: center;
+          line-height: normal;
+
+        }
+        h2{
+
+          width: 300px !important;
+          text-align: center;
+        }
+        p{
+          text-align: center;
+        }
+
+      ;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 375px) {
+
+  .course_result{
+    margin-right: auto;
+    width: 375px;
+    .course_result_content{
+      display: flex;
+      flex-direction: column;
+      align-items: center ;
+      .course_result_image{
+        width: 280px  ;
+      }
+      .course_result_text{
+        padding-inline: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .course_result_title{
+          font-size: 35px;
+          font-weight: bold;
+          text-align: center;
+          line-height: normal;
+
+        }
+        h2{
+
+          width: 300px !important;
+          text-align: center;
+        }
+        p{
+          text-align: center;
+        }
+
+      ;
+      }
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+.bg{
+  background: #61DAFB ;
+  padding: 14px;
+  transform: rotate(-5deg);
+  width: 3320px;
+}
+  .course_result{
+    width: 320px;
+    .course_result_content{
+      display: flex;
+      flex-direction: column;
+      align-items: center ;
+      .course_result_image{
+        width: 280px  ;
+      }
+      .course_result_text{
+        padding-inline: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .course_result_title{
+          font-size: 35px;
+          font-weight: bold;
+          text-align: center;
+          line-height: normal;
+
+        }
+      h2{
+
+        width: 300px !important;
+        text-align: center;
+      }
+        p{
+          text-align: center;
+        }
+
+      ;
+      }
+    }
+  }
+
+}

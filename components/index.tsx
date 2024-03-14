@@ -9,7 +9,8 @@ export default  function  SidebarBlog (){
                     فهرست مطالب
                 </div>
                 <div className={styles.sidebar_blog_item}>
-                    <p>test</p>
+                    <p>مقالات جدید </p>
+
                 </div>
                 <div className={styles.sidebar_blog_item}>
                     <p>test</p>
