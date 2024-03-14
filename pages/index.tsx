@@ -16,7 +16,6 @@ import SayStudentSection from "@/components/SayStudent";
 export default function IndexPage() {
 	return (
 		<DefaultLayout>
-
 				<Banner/>
 				<AboutSection/>
 				<Courses/>
