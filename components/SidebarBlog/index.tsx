@@ -16,7 +16,6 @@ export default function SidebarBlogSingle () {
                         <li><Link href={'#'}>معرفی انواع مشاغل برنامه نویسی</Link></li>
                         <li><Link href={'#'}>پرکاربردترین زبان‌های برنامه نویسی چیست؟؟</Link></li>
                         <li><Link href={'#'}>اولین قدم‌های یادگیری برنامه نویسی چیست؟</Link></li>
-
                     </ul>
                 </div>
             </div>

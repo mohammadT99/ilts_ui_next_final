@@ -154,4 +154,17 @@
     margin-right:0;
     margin-left: 0;
   }
+  .sidebar_blog_single{
+    margin-right: 40px;
+    white-space: wrap;
+    .sidebar_blog_single_content{
+
+            .sidebar_blog_single_content_list{
+        li{
+          white-space: wrap;
+          width: 280px;
+        }
+      }
+    }
+  }
 }
