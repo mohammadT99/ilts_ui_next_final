@@ -1,0 +1,27 @@
+.ticket{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 60px;
+  .ticket_content{
+    padding: 25px;
+    background: #EEF2FA;
+    border-radius: 10px;
+    width: 1125px;
+    .ticket_content_filter{
+      margin-bottom: 10px;
+      display: flex;
+      align-content:center;
+      justify-content: center;
+      gap: 24px;
+      .ticket_content_filter_inputs{
+        height: 45px;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+      }
+      .ticket_content_filter_button{
+        height: 45px;
+      }
+    }
+  }
+}

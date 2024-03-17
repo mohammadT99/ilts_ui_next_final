@@ -1,0 +1,17 @@
+.send_ticket_header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  h1{
+    font-size: 25px;
+    white-space: nowrap;
+  }
+  .send_ticket_header_circle{
+    padding: 1px ;
+    background: #FFCF59;
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+  }
+}

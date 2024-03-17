@@ -1,0 +1,28 @@
+.dashboard_grid{
+  margin-top: 15px;
+  grid-template-areas:
+  "s s s s c c c c c c c "
+;
+  column-gap: 24px;
+  .child_dashboard{
+    grid-area: c;
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard_grid{
+    margin-top: 15px;
+    grid-template-areas:
+  "s s s s c c c c c c c "
+  ;
+    column-gap: 24px;
+    width: 100%;
+    max-width: 720px;
+    .child_dashboard{
+      grid-area: c;
+
+    }
+  }
+}
+

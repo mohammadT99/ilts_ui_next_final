@@ -1,0 +1,228 @@
+.send_ticket{
+  padding-inline: 14px;
+  padding-block: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 65vh;
+
+  .send_ticket_content{
+   margin-top: 60px;
+    width: 900px  ;
+    padding: 14px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .send_ticket_content_forms{
+      margin-right: -130px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      background: #EEF2FA;
+      padding-inline: 20px  ;
+      padding-block: 50px;
+      border-radius: 10px ;
+      .send_ticket_content_forms_inputs{
+        //background: #EEF2FA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        .inputs{
+          width: 360px;
+          border: 1px solid #000;
+          border-radius: 10px;
+        }
+        .inputs_text{
+          width: 750px;
+          border: 1px solid #000;
+          border-radius: 10px;
+        }
+      }
+      .send_ticket_content_forms_buttons{
+        margin-top: 20px;
+        margin-right: 100px;
+      }
+    }
+  }
+}
+
+//responsive
+@media only screen and (max-width: 1024px) {
+  .send_ticket{
+
+    .send_ticket_header{
+      h1{
+        font-size: 18px;
+      }
+    }
+    .send_ticket_content{
+      margin-right: -160px;
+      width: max-content;
+      margin-top: 50px;
+      padding: 0;
+      .send_ticket_content_forms{
+        width: 800px;
+        padding: 20px;
+        margin-right: -0px;
+
+        .send_ticket_content_forms_inputs{
+          margin-right: 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          gap: 18px;
+          .inputs{
+            width: 370px;
+          }
+          .inputs_text{
+            width: 800px;
+          }
+        }
+        .send_ticket_content_forms_buttons{
+          margin-right:0px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .send_ticket{
+
+    .send_ticket_header{
+      h1{
+        font-size: 18px;
+      }
+    }
+    .send_ticket_content{
+      margin-right: -160px;
+      width: max-content;
+      margin-top: 50px;
+      padding: 0;
+      .send_ticket_content_forms{
+        width: 580px;
+        padding: 10px;
+        margin-right: -0px;
+
+        .send_ticket_content_forms_inputs{
+          margin-right: 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          gap: 18px;
+          .inputs{
+            width: 270px;
+          }
+          .inputs_text{
+            width: 550px;
+          }
+        }
+        .send_ticket_content_forms_buttons{
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .send_ticket{
+
+    .send_ticket_header{
+      h1{
+        font-size: 18px;
+      }
+    }
+    .send_ticket_content{
+      margin-right: -165px;
+      width: 400px;
+      margin-top: 50px;
+      padding: 0;
+      .send_ticket_content_forms{
+        padding: 10px;
+        margin-right: -0px;
+        .send_ticket_content_forms_inputs{
+          margin-right: 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 16px;
+          .inputs{
+            width: 375px;
+          }
+          .inputs_text{
+            width: 375px;
+          }
+        }
+        .send_ticket_content_forms_buttons{
+          margin-right: -0px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .send_ticket{
+
+    .send_ticket_header{
+      h1{
+        font-size: 18px;
+      }
+    }
+    .send_ticket_content{
+      margin-right: -165px;
+      width: 350px;
+      margin-top: 50px;
+      padding: 0;
+      .send_ticket_content_forms{
+        padding: 10px;
+        margin-right: -0px;
+        .send_ticket_content_forms_inputs{
+          margin-right: 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 16px;
+          .inputs{
+            width: 320px;
+          }
+          .inputs_text{
+            width: 320px;
+          }
+        }
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .send_ticket{
+
+    .send_ticket_header{
+      h1{
+        font-size: 18px;
+      }
+    }
+    .send_ticket_content{
+      margin-right: -165px;
+      width: 300px;
+      margin-top: 50px;
+      padding: 0;
+      .send_ticket_content_forms{
+        padding: 10px;
+        margin-right: -0px;
+        .send_ticket_content_forms_inputs{
+          margin-right: 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 16px;
+          .inputs{
+            width: 275px;
+          }
+          .inputs_text{
+            width: 275px;
+          }
+        }
+      }
+    }
+  }
+}
