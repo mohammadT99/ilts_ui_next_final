@@ -1,20 +1,20 @@
 .send_ticket{
   padding-inline: 14px;
   padding-block: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   height: 65vh;
 
   .send_ticket_content{
-   margin-top: 60px;
-    width: 900px  ;
-    padding: 14px ;
+   margin-top: 40px;
+    margin-right: 0;
+    width: 100%  ;
+    padding: 45px ;
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    background: #EEF2FA;
+    align-items: flex-start;
     .send_ticket_content_forms{
-      margin-right: -130px;
+      //margin-right: -0px;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
       background: #EEF2FA;
       padding-inline: 20px  ;
