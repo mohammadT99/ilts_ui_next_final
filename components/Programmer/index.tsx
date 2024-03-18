@@ -1,14 +1,20 @@
 import styles from '@/styles/programmer.module.scss' ;
 import CardProduct from "@/components/CradProduct";
+import {useEffect, useState} from "react";
 export default function  Programmer () {
-    const data = [
-        {
-            title:'ali' ,
-            price:25 ,
-            cover:'text'
-
+    const [blog, setBlog] = useState([])
+    const [loading, setLoading] = useState()
+    const show = async () => {
+        const response = await fetch('https://fakestoreapi.com/products?limit=3')
+        const data = await response.json();
+        if(data) {
+            setBlog(data)
+            setLoading(false)
         }
-    ]
+    }
+    useEffect(() => {
+        show()
+    }, []);
     return (
         <>
             <section className={styles.program}>
@@ -19,9 +25,15 @@ export default function  Programmer () {
                             صنعت و توسط طراحی گرافیکی چاپگرها و متون و همچنین روزنامه و مجله استفاده می شود </p>
                     </div>
                     <div className={styles.program__crad}>
-                        <CardProduct data={data} />
-                        <CardProduct data={data} />
-                        <CardProduct data={data} />
+                        {
+                            blog.map((item , key ) => {
+                                return (
+                                    <>
+                                        <CardProduct data={item} key={key}/>
+                                    </>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </section>

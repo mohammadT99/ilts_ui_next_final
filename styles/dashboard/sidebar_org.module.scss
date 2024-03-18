@@ -20,7 +20,20 @@
     margin-right: 100px;
     display: flex;
     justify-content: center;
-    gap: 75px;
+    gap: 0px;
+    .sidebar_dashboard_header_user{
+      display: flex;
+      align-items: flex-end;
+
+      margin-right: 0px;
+      gap: 20px;
+      .sidebar_dashboard_header_user_links{
+        margin-bottom: 5px;
+        padding: 6px;
+        border-radius: 10px;
+        font-size: 14px;
+      }
+    }
   }
   .sidebar_dashboard_content{
     display: flex;

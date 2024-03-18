@@ -1,7 +1,7 @@
 import styles from '@/styles/dashboard/sidebar_org.module.scss' ;
 import Avatar from "@/components/Avatar";
 import User from '@/public/Images/user_1.png';
-import {Danger, Facebook, Home, SidebarLeft, UserAdd} from "iconsax-react";
+import {Danger, Facebook, FolderMinus, Home, SidebarLeft, UserAdd} from "iconsax-react";
 import {Link} from "@nextui-org/link";
 import {toast} from "react-toastify";
 import isActive = toast.isActive;
@@ -13,13 +13,13 @@ export default function SidebarDashboard ( ) {
         {
             title: 'خانه',
             icon: <Home/> ,
-            href:'/home',
+            href:'/dashboard',
             active:true
         } ,
         {
-            title: 'محصولات',
-            icon:<UserAdd/> ,
-            href:'/' ,
+            title: 'دوره های خریداری شده',
+            icon:<FolderMinus/> ,
+            href:'/dashboard/course' ,
 
         } ,
         {
@@ -44,6 +44,7 @@ export default function SidebarDashboard ( ) {
                <div className={styles.sidebar_dashboard_header}>
                     <div className={styles.sidebar_dashboard_header_user} >
                         <Avatar image={User} title={'سارا رجبی'} size={'80'} description={''} fontS={'18'}  />
+                        <Link href={'/dashboard/profile'} className={` bg-secondary text-black  ${styles.sidebar_dashboard_header_user_links}`}>پروفایل</Link>
                     </div>
                     <span onClick={handdleClose}><SidebarLeft/></span>
                </div>

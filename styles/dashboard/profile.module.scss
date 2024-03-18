@@ -1,0 +1,177 @@
+.profile{
+
+  .profile_content{
+    margin-top: 20px;
+    background: #EEF2FA;
+    width: 121vh;
+    border-radius: 10px;
+    height: 75vh;
+    padding: 20px;
+    .profile_content_edit{
+      margin-top: 20px;
+      padding: 24px;
+      background: white;
+      border-radius: 10px;
+      .profile_content_edit_header{
+        font-size: 20px;
+      }
+      .profile_content_edit_content{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 100px;
+        .profile_content_edit_content_form{
+          margin-top: 20px;
+          display: flex;
+          gap: 20px;
+          .profile_content_edit_content_form_input{
+            width: 350px;
+            border: 1px solid #AAAAAA;
+            border-radius: 10px;
+            height: 50px;
+          }
+        }
+        .profile_content_edit_content_user{
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          justify-content: center;
+          align-items: center;
+          h1{
+            font-size: 20px;
+          }
+          .profile_content_edit_content_user_upload{
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            padding:6px 14px ;
+            border: 1px solid #aaa;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .profile{
+    .profile_content{
+      height: 120vh;
+      width: 880px;
+      .profile_content_edit{
+        width: 822px;
+        margin-right: 10px;
+        .profile_content_edit_content{
+          display: flex;
+          flex-direction: row;
+          gap: 100px;
+          .profile_content_edit_content_form{
+            display: flex;
+            flex-direction: column;
+            .profile_content_edit_content_form_input{
+              width: 450px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .profile{
+    .profile_content{
+      height: 120vh;
+      width: 620px;
+      .profile_content_edit{
+        width: 560px;
+        margin-right: 10px;
+        .profile_content_edit_content{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          .profile_content_edit_content_form{
+            display: flex;
+            flex-direction: column;
+            .profile_content_edit_content_form_input{
+              width: 350px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .profile{
+    .profile_content{
+      height: 120vh;
+      .profile_content_edit{
+        width: 375px;
+        margin-right: 10px;
+        .profile_content_edit_content{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          .profile_content_edit_content_form{
+            display: flex;
+            flex-direction: column;
+            .profile_content_edit_content_form_input{
+              width: 350px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .profile{
+    .profile_content{
+      height: 120vh;
+      .profile_content_edit{
+        width: 350px;
+        margin-right: -10px;
+        .profile_content_edit_content{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          .profile_content_edit_content_form{
+            display: flex;
+            flex-direction: column;
+            .profile_content_edit_content_form_input{
+              width: 320px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .profile{
+    .profile_content{
+      height: 120vh;
+      .profile_content_edit{
+        width: 300px;
+        margin-right: -12px;
+        .profile_content_edit_content{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          .profile_content_edit_content_form{
+            display: flex;
+            flex-direction: column;
+            .profile_content_edit_content_form_input{
+              width: 280px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

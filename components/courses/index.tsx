@@ -2,24 +2,24 @@
 import styles from '@/styles/courses.module.scss' ;
 import {Button} from "@nextui-org/react";
 import CardProduct from "@/components/CradProduct";
+import {useEffect, useState} from "react";
+import CardLoarder from "@/components/CardLoader";
 
 
 export default function Courses(){
-    type data = [
-        title:string ,
-        price:number  ,
-        cover:string ,
-
-
-    ]
-    const data = [
-        {
-            title:'ali' ,
-            price:25 ,
-            cover:'text'
-
+    const [facke , setFacke ] = useState([])
+    const [loading , setLoading ] = useState(true)
+    const show = async () => {
+        const response = await fetch('https://fakestoreapi.com/products?limit=3')
+        const data = await response.json();
+        if(data) {
+            setFacke(data)
+            setLoading(false)
         }
-    ]
+    }
+    useEffect(() => {
+        show()
+    }, []);
     return (
         <>
             <section className={styles.courses}>
@@ -32,9 +32,22 @@ export default function Courses(){
 
                     </div>
                     <div className={styles.courses__cards}>
-                       <CardProduct data={data} />
-                        <CardProduct data={data} />
-                        <CardProduct data={data} />
+                        {
+                            loading?(
+                                <div className={'flex gap-4'}>
+                                    <CardLoarder/>
+                                    <CardLoarder/>
+                                    <CardLoarder/>
+                                </div>
+                            ):(
+                                facke.map((item , key ) => {
+                                    return(
+                                        <CardProduct data={item} key={key}/>
+                                    )
+                                })
+                            )
+                        }
+
                     </div>
                 </div>
             </section>
